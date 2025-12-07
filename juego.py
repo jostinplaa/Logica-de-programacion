@@ -1,68 +1,44 @@
 import random
 
 def jugar():
-    print("👋 ¡Bienvenido al juego de Piedra, Papel o Tijera!")
-    print("-" * 40)
+    print("Bienvenido al juego de Piedra, Papel o Tijera")
+
+    opciones = {1: "piedra", 2: "papel", 3: "tijera"}
+    opcion_valida = False
     
-    # Diccionario para convertir números a texto
-    opciones = {1: "Piedra", 2: "Papel", 3: "Tijera"}
-    
-    # Variable de control para el Bucle Principal (Estructura Repetitiva)
-    jugar_de_nuevo = True
-    
-    while jugar_de_nuevo:
-        
-        print("\n--- Menú ---")
+    while not opcion_valida:
+         
+        print("\n--- Menú ---") 
         print("(1) Piedra")
         print("(2) Papel")
         print("(3) Tijera")
-        
-        # --- Validación de Entrada (Manejo de Errores e Innovación) ---
-        opcion_valida = False
-        while not opcion_valida:
-            try:
-                opcion_usuario_num = int(input("Elige tu opción (1, 2 o 3): "))
-                if opcion_usuario_num in opciones:
-                    opcion_valida = True
-                    opcion_usuario = opciones[opcion_usuario_num]
-                else:
-                    print("⚠️ Opción inválida. Elige 1, 2 o 3.")
-            except ValueError:
-                # Si el usuario escribe texto, el programa no falla (Try-Except)
-                print("⚠️ Error: Debes ingresar un NÚMERO.")
 
-        # Generar opción del computador
-        opcion_computador_num = random.randint(1, 3)
-        opcion_computador = opciones[opcion_computador_num]
+        try:
+            opcion_usuario = int(input("Elige una opcion: "))
 
-        print(f"\n✨ Tú: {opcion_usuario} vs 🤖 PC: {opcion_computador}")
-
-        # --- Lógica de Decisión (Estructuras Selectivas) ---
-        
-        # 1. ¿Es Empate?
-        if opcion_usuario == opcion_computador:
-            print("🤝 ¡Es un EMPATE!")
-        else:
-            # 2. Decisión Anidada: ¿Usuario Gana?
-            if (opcion_usuario == "Piedra" and opcion_computador == "Tijera") or \
-               (opcion_usuario == "Papel" and opcion_computador == "Piedra") or \
-               (opcion_usuario == "Tijera" and opcion_computador == "Papel"):
-                print("🥳 ¡GANASTE!")
+            
+            if opcion_usuario in opciones:
+                opcion_valida = True
+                print("Has elegido: ", opciones[opcion_usuario])
             else:
-                print("😢 PERDISTE.")
-        
-        # --- Pregunta de Reinicio (Validación Estricta) ---
-        respuesta_valida = False
-        while not respuesta_valida:
-            resp = input("\n¿Jugar de nuevo? (s/n): ").lower()
-            if resp == 's' or resp == 'n':
-                respuesta_valida = True
-                if resp == 'n':
-                    jugar_de_nuevo = False
-                    print("¡Gracias por jugar! Fin del programa.")
-            else:
-                print("❌ Por favor, responde solo 's' o 'n'.")
+                print("Opcion no valida. Intente de nuevo.")
+        except ValueError:
+            print("Por favor, ingresa un numero valido")
 
-# Punto de entrada del programa
-if __name__ == "__main__":
-    jugar()
+    opcion_computador = random.randint(1, 3)
+    print("La computadora ha elegido: ", opciones[opcion_computador])
+
+    if opcion_usuario == opcion_computador:
+        print("Empate")
+    elif (opcion_usuario == 1 and opcion_computador == 3) or \
+         (opcion_usuario == 2 and opcion_computador == 1) or \
+         (opcion_usuario == 3 and opcion_computador == 2):
+        print("Ganaste")
+    else:
+        print("Perdiste")
+    # Este código representa el avance del 70%, demostrando la lógica selectiva y la validación.
+    # Para la entrega final del proyecto (100%), realizare las siguientes implementaciones:
+    # 1. Implementare la ESTRUCTURA REPETITIVA PRINCIPAL (el while grande) para el rombo "¿Jugar de nuevo?".
+    # 2. Añadire comentarios (#) detallados dentro del codigo para asegurar el entendimiento del código.
+
+jugar()
