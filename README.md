@@ -1,6 +1,7 @@
 Piedra, Papel o Tijera – Proyecto Final
 
 Estudiante: JOSTIN JOHAO HERRERA ALVAREZ
+
 Materia: Lógica de Programación
 
 📌 Descripción del proyecto
