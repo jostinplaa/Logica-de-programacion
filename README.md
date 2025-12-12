@@ -5,12 +5,15 @@ Materia: Lógica de Programación
 
 📌 Descripción del proyecto
 
-Este proyecto consiste en el clásico juego de Piedra, Papel o Tijera, donde el usuario juega contra la computadora.
-El programa está hecho en Python utilizando únicamente los temas vistos en clase: variables, entradas, salidas, condicionales, ciclos, excepciones y comparaciones.
+Este proyecto consiste en el desarrollo del juego Piedra, Papel o Tijera utilizando el lenguaje de programación Python.
+
+El juego representa un ejemplo básico del impacto de las nuevas tecnologías en la sociedad, específicamente en el área del entretenimiento digital y el aprendizaje, ya que muestra cómo la programación permite crear aplicaciones interactivas que facilitan la diversión y el desarrollo del pensamiento lógico.
 
 🎯 Propósito del proyecto
 
-El propósito es aplicar los temas vistos en clase para crear un programa funcional usando Python. Además, demostrar el uso correcto de variables, condiciones, ciclos y manejo básico de errores.
+El propósito de este proyecto es aplicar los conocimientos adquiridos en la materia de Lógica de Programación para desarrollar un software funcional.
+
+Además, busca reflexionar sobre cómo las nuevas tecnologías, a través del desarrollo de programas y videojuegos sencillos, influyen en la sociedad al ofrecer nuevas formas de entretenimiento, aprendizaje y resolución de problemas.
 
 🎯 ¿Qué hace el programa?
 
