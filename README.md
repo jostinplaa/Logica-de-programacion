@@ -7,13 +7,13 @@ Materia: Lógica de Programación
 
 Este proyecto consiste en el desarrollo del juego Piedra, Papel o Tijera utilizando el lenguaje de programación Python.
 
-El juego representa un ejemplo básico del impacto de las nuevas tecnologías en la sociedad, específicamente en el área del entretenimiento digital y el aprendizaje, ya que muestra cómo la programación permite crear aplicaciones interactivas que facilitan la diversión y el desarrollo del pensamiento lógico.
+El juego funciona como una evidencia práctica de la lógica que utilizan las tecnologías actuales, ya que simula procesos de decisión, validación de datos y control de flujo que están presentes en el software que se usa diariamente en la sociedad, especialmente en aplicaciones de entretenimiento digital.
 
 🎯 Propósito del proyecto
 
-El propósito de este proyecto es aplicar los conocimientos adquiridos en la materia de Lógica de Programación para desarrollar un software funcional.
+El propósito de este proyecto es aplicar los temas vistos en la materia de Lógica de Programación para analizar cómo un software puede ser confiable y funcional mediante el uso correcto de estructuras lógicas.
 
-Además, busca reflexionar sobre cómo las nuevas tecnologías, a través del desarrollo de programas y videojuegos sencillos, influyen en la sociedad al ofrecer nuevas formas de entretenimiento, aprendizaje y resolución de problemas.
+Además, el proyecto permite reflexionar sobre el impacto del software en la sociedad, mostrando cómo incluso programas sencillos influyen en el entretenimiento, el aprendizaje y la interacción con la tecnología.
 
 🎯 ¿Qué hace el programa?
 
@@ -49,14 +49,12 @@ Ejecutarlo en una terminal o editor de Python
 
 📝 Avance del Proyecto
 
-El video incluido en este repositorio muestra un avance del 70% del proyecto, donde se explica su funcionamiento y lógica interna.
+El proyecto se encuentra completado al 100% y funcionando correctamente.
+Durante el desarrollo se realizó un avance del 70%, el cual fue explicado mediante un video que se mantiene en el repositorio como evidencia del proceso.
+La demostración final del funcionamiento del juego se realizó a través de la presentación en clase, la cual reemplazó el video demostrativo final solicitado inicialmente.
 
-✔ Estado actual
-
-El proyecto se encuentra completado y funcionando correctamente.
-
-🟦 Cronograma (versión simple y EXACTA al nivel del curso)
-Semana	Actividad realizada
+🟦 Cronograma 
+Semana	         Actividad realizada
 Semana 1	Elección del juego y análisis básico
 Semana 2	Identificación de variables, entradas y salidas
 Semana 3	Creación del menú y lectura de opciones
