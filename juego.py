@@ -1,74 +1,90 @@
 import random
 
 def jugar():
-    print("Bienvenido al juego de Piedra, Papel o Tijera")
+    print("🎮 ¡Bienvenido al juego de Piedra, Papel o Tijera! 🎮")
+    print("=" * 45)
+    
+    # DATOS INICIALES: Diccionarios para la interfaz y la lógica del juego.
+    opciones = {1: "piedra", 2: "papel", 3: "tijera"}
+    emojis = {1: "🪨", 2: "📄", 3: "✂️ "}
     
     # ----------------------------------------------------
-    # PASO 1: INICIO DEL CICLO PRINCIPAL
-    repetir_juego = True # Variable de control para el rombo "¿Jugar de nuevo?"
-    
-    # Este WHILE GRANDE ejecuta todo el juego
+    # ESTRUCTURA REPETITIVA PRINCIPAL (WHILE GRANDE)
+    # Controla el rombo "¿Jugar de nuevo?" y permite que el juego se repita continuamente.
+    repetir_juego = True 
     while repetir_juego: 
     # ----------------------------------------------------
 
-        opciones = {1: "piedra", 2: "papel", 3: "tijera"}
         opcion_valida = False
         
-        # ESTRUCTURA REPETITIVA 1: Validar Entrada
+        # ESTRUCTURA REPETITIVA INTERNA: Validar Entrada
+        # Este bucle se repite hasta que el usuario ingrese una opción válida (1, 2 o 3).
         while not opcion_valida:
-            # ... (Toda la lógica de Menú y Try/Except va aquí) ...
 
-            print("\n--- Menú ---") 
-            print("(1) Piedra")
-            print("(2) Papel")
-            print("(3) Tijera")
+            print("\n🎯 --- Menú --- 🎯") 
+            print("(1) Piedra  🪨")
+            print("(2) Papel   📄")
+            print("(3) Tijera  ✂️")
 
             try:
-                opcion_usuario = int(input("Elige una opcion: "))
+                opcion_usuario = int(input("\n👉 Elige una opcion: "))
 
                 if opcion_usuario in opciones:
                     opcion_valida = True
-                    # Aquí se usa opcion_usuario como el número para la lógica
-                    print("Has elegido: ", opciones[opcion_usuario])
+                    # La variable opcion_usuario guarda el NÚMERO entero para la lógica.
+                    print(f"\n🙋 Has elegido: {emojis[opcion_usuario]} {opciones[opcion_usuario]}")
                 else:
-                    print("Opcion no valida. Intente de nuevo.")
+                    print("❌ Opcion no valida. Intente de nuevo.")
             except ValueError:
-                print("Por favor, ingresa un numero valido")
+                # MANEJO DE EXCEPCIONES: Captura errores si el usuario ingresa texto (Robustez).
+                print("⚠️  Por favor, ingresa un numero valido")
 
         # ESTRUCTURA SECUENCIAL: Generar el turno de la computadora
         opcion_computador = random.randint(1, 3) 
-        print("La computadora ha elegido: ", opciones[opcion_computador])
+        print(f"🤖 La computadora ha elegido: {emojis[opcion_computador]} {opciones[opcion_computador]}")
+        
+        print("\n" + "=" * 30)
+        print("⚔️  ¡RESULTADO! ⚔️")
+        print("=" * 30)
 
-        # ESTRUCTURA SELECTIVA: Lógica de Comparación
+        # ESTRUCTURA SELECTIVA: Determinar el ganador
+        # Compara la elección del usuario vs la computadora usando decisiones anidadas.
         
         if opcion_usuario == opcion_computador:
-            print("Empate")
+            print("🤝 ¡EMPATE! 🤝")
+            
+        # LÓGICA DE VICTORIA: Piedra(1) vence Tijera(3), Papel(2) vence Piedra(1), Tijera(3) vence Papel(2)
         elif (opcion_usuario == 1 and opcion_computador == 3) or \
              (opcion_usuario == 2 and opcion_computador == 1) or \
              (opcion_usuario == 3 and opcion_computador == 2):
-            print("Ganaste")
+            print("🏆🎉 ¡GANASTE! 🎉🏆")
+            
         else:
-            print("Perdiste")
+            # Si no es empate ni gane, el resultado es pérdida.
+            print("😢💔 ¡PERDISTE! 💔😢")
             
         # ----------------------------------------------------
-        # PASO 2: CONTROL DEL CICLO PRINCIPAL (Rombo "¿Jugar de nuevo?")
+        # CONTROL DEL CICLO PRINCIPAL: Pregunta si desea jugar de nuevo
         
-        # Bucle para validar que la respuesta sea solo 's' o 'n'
         respuesta_valida = False
+        # Bucle para validar que la respuesta sea solo 's' o 'n' (Estructura repetitiva interna)
         while not respuesta_valida:
-            # Pedimos input al usuario y lo convertimos a minúscula
-            respuesta = input("\n¿Quieres jugar de nuevo? (s/n): ")
+            respuesta = input("\n🔄 ¿Quieres jugar de nuevo? (s/n): ")
             
             if respuesta == 'n':
-                repetir_juego = False # Cambia la variable a False, el while grande terminará
+                # Detiene el bucle grande (repetir_juego = False)
+                repetir_juego = False 
                 respuesta_valida = True
-                print("¡Gracias por jugar! Fin del programa.")
+                print("\n" + "=" * 45)
+                print("👋 ¡Gracias por jugar! Hasta pronto 🌟")
+                print("=" * 45)
             elif respuesta == 's':
-                respuesta_valida = True # La variable 'repetir_juego' sigue en True, el while se repite
+                # Permite que el bucle grande se repita
+                respuesta_valida = True 
+                print("\n🔥 ¡Vamos de nuevo! 🔥")
             else:
-                print("Respuesta no válida. Por favor, usa 's' o 'n'.")
+                print("❌ Respuesta no válida. Por favor, usa 's' o 'n'.")
                 
     # ----------------------------------------------------
-    # FIN: El programa sale del while y la función termina aquí.
-
+    # FIN DEL PROGRAMA: Sale del bucle while cuando el usuario elige 'n'.
 jugar()
