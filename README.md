@@ -38,7 +38,6 @@ Entrada y salida de datos (input, print)
 juego.py → contiene el código completo del juego
 Diagramas en formato PNG
 Video explicando el funcionamiento del juego
-Este documento README.md
 
 ▶️ Cómo ejecutar el programa
 
