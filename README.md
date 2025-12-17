@@ -54,17 +54,6 @@ El proyecto se encuentra completado al 100% y funcionando correctamente.
 Durante el desarrollo se realizó un avance del 70%, el cual fue explicado mediante un video que se mantiene en el repositorio como evidencia del proceso.
 La demostración final del funcionamiento del juego se realizó a través de la presentación en clase, la cual reemplazó el video demostrativo final solicitado inicialmente.
 
-🟦 Cronograma 
-Semana	         Actividad realizada
-Semana 1	Elección del juego y análisis básico
-Semana 2	Identificación de variables, entradas y salidas
-Semana 3	Creación del menú y lectura de opciones
-Semana 4	Programación de condicionales y comparación de jugadas
-Semana 5	Implementación del ciclo para repetir el juego
-Semana 6	Manejo de errores con try-except
-Semana 7	Realización de diagramas y presentación del avance del 70%
-Semana 8	Correcciones finales, grabación del video y entrega del proyecto
-
 👤 Autor
 
 Jostin Johao Herrera Álvarez
