@@ -80,4 +80,5 @@ La demostración final del funcionamiento del software se realizó mediante una 
 👤 Autor
 
 Jostin Johao Herrera Álvarez
+
 Proyecto Final – Lógica de Programación
