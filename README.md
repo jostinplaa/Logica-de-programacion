@@ -1,8 +1,11 @@
 🪨📄✂️ Piedra, Papel o Tijera – Proyecto Final
 
 Estudiante: Jostin Johao Herrera Álvarez
+
 Materia: Lógica de Programación
+
 Lenguaje: Python
+
 Fecha: 2025
 
 📌 Descripción del proyecto
