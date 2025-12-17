@@ -1,60 +1,80 @@
-Piedra, Papel o Tijera – Proyecto Final
+🪨📄✂️ Piedra, Papel o Tijera – Proyecto Final
 
-Estudiante: JOSTIN JOHAO HERRERA ALVAREZ
-
+Estudiante: Jostin Johao Herrera Álvarez
 Materia: Lógica de Programación
+Lenguaje: Python
+Fecha: 2025
 
 📌 Descripción del proyecto
 
-Este proyecto consiste en el desarrollo del juego Piedra, Papel o Tijera utilizando el lenguaje de programación Python.
+Este proyecto consiste en el desarrollo del juego Piedra, Papel o Tijera utilizando el lenguaje de programación Python. El software fue creado como evidencia práctica de la aplicación de la lógica de programación y del pensamiento computacional.
 
-El juego funciona como una evidencia práctica de la lógica que utilizan las tecnologías actuales, ya que simula procesos de decisión, validación de datos y control de flujo que están presentes en el software que se usa diariamente en la sociedad, especialmente en aplicaciones de entretenimiento digital.
+El juego simula procesos fundamentales presentes en las tecnologías actuales, tales como la toma de decisiones, validación de datos, control de flujo y repetición de procesos, los cuales son utilizados de manera constante en aplicaciones de entretenimiento digital y otros sistemas de software que impactan a la sociedad.
 
 🎯 Propósito del proyecto
 
-El propósito de este proyecto es aplicar los temas vistos en la materia de Lógica de Programación para analizar cómo un software puede ser confiable y funcional mediante el uso correcto de estructuras lógicas.
+El propósito principal de este proyecto es aplicar los conocimientos adquiridos en la asignatura Lógica de Programación, demostrando cómo un software puede ser funcional, confiable y eficiente mediante el uso adecuado de estructuras lógicas.
 
-Además, el proyecto permite reflexionar sobre el impacto del software en la sociedad, mostrando cómo incluso programas sencillos influyen en el entretenimiento, el aprendizaje y la interacción con la tecnología.
+Asimismo, el proyecto busca reflexionar sobre el impacto del software en la sociedad, evidenciando que incluso programas sencillos influyen en el entretenimiento, el aprendizaje y la interacción cotidiana con la tecnología.
 
-🎯 ¿Qué hace el programa?
+⚙️ Funcionalidades del programa
 
-Muestra un menú con tres opciones: piedra, papel y tijera.
+El programa realiza las siguientes acciones:
 
-El usuario elige una opción.
-La computadora elige otra opción de forma aleatoria.
-El programa compara ambas elecciones y muestra si el usuario gana, pierde o empata.
-Al final pregunta si el usuario desea volver a jugar.
+Muestra un menú con las opciones: piedra, papel y tijera.
 
-🧩 Conceptos aplicados
+Permite al usuario seleccionar una opción.
 
-En este proyecto utilicé varios temas que vimos en clases, como:
+Genera una elección aleatoria por parte de la computadora.
+
+Compara ambas elecciones y determina el resultado (gana, pierde o empata).
+
+Muestra el resultado en pantalla.
+
+Pregunta al usuario si desea volver a jugar.
+
+🧩 Conceptos de programación aplicados
+
+Durante el desarrollo del proyecto se aplicaron los siguientes conceptos:
 
 Variables y tipos de datos
-Condicionales (if, elif, else)
+
+Estructuras condicionales (if, elif, else)
+
 Bucles (while)
-Manejo de excepciones con try – except
+
+Manejo de excepciones (try – except)
+
 Diccionarios
+
 Uso de funciones (def)
+
 Entrada y salida de datos (input, print)
 
-📁 Archivos incluidos
+📁 Archivos incluidos en el repositorio
 
-juego.py → contiene el código completo del juego
-Diagramas en formato PNG
-Video explicando el funcionamiento del juego
+juego.py → Contiene el código completo del juego.
+
+Diagramas de flujo en formato PNG.
+
+Video explicativo del funcionamiento del programa y del avance del proyecto.
 
 ▶️ Cómo ejecutar el programa
 
-Abrir el archivo juego.py
-Ejecutarlo en una terminal o editor de Python
+Abrir el archivo juego.py.
 
-📝 Avance del Proyecto
+Ejecutarlo desde una terminal o desde un editor compatible con Python.
+
+Seguir las instrucciones que aparecen en pantalla.
+
+📝 Estado del proyecto
 
 El proyecto se encuentra completado al 100% y funcionando correctamente.
-Durante el desarrollo se realizó un avance del 70%, el cual fue explicado mediante un video que se mantiene en el repositorio como evidencia del proceso.
-La demostración final del funcionamiento del juego se realizó a través de la presentación en clase, la cual reemplazó el video demostrativo final solicitado inicialmente.
+Durante su desarrollo se presentó un avance aproximado del 70%, el cual fue explicado mediante un video incluido en el repositorio como evidencia del proceso.
+
+La demostración final del funcionamiento del software se realizó mediante una presentación en clase.
 
 👤 Autor
 
 Jostin Johao Herrera Álvarez
-Proyecto final – Introducción a la Programación
+Proyecto Final – Lógica de Programación
